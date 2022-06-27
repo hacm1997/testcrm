@@ -1,0 +1,67 @@
+<div align="end" class="paddings">
+    <a mat-button color="primary" routerLink="/clients" >Add User/Client</a>
+</div>    
+<mat-card class="example-card">
+    <mat-card-title>Adding</mat-card-title>
+    <mat-card-subtitle>...Write...</mat-card-subtitle>
+    
+    <mat-card-content>
+        <!-- Contenido de la card-->
+        <form [formGroup]="userForm">
+
+            <mat-form-field appearance="outline">
+                <mat-label>CC</mat-label>
+                <input formControlName="cc" matInput placeholder="CC">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" matInput placeholder="Name">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input formControlName="last_name" matInput placeholder="Last name">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput placeholder="Email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Cell phone</mat-label>
+                <input formControlName="cell_phone" type="number" matInput placeholder="Cell phone">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <textarea formControlName="address" matInput placeholder="Address"></textarea>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Birthday</mat-label>
+                <input formControlName="birthday" matInput [matDatepicker]="picker">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Type contract</mat-label>
+                <input formControlName="tipy_contract" matInput placeholder="Type contract">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Origin</mat-label>
+                <input formControlName="origen" matInput placeholder="Origin">
+            </mat-form-field>
+
+        </form>
+        <!--Final del contenido de la card-->
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <a mat-button color="success" [mat-dialog-close]="true" routerLink="/clients">Cancel</a>
+      <button mat-button color="primary" [mat-dialog-close]="true" (click)="addUserC()">Save</button>
+    </mat-card-actions>
+  </mat-card>

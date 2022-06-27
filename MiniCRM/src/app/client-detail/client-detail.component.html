@@ -1,0 +1,55 @@
+<div align="end" class="paddings">
+    <a mat-button color="primary" routerLink="/clients" >Details User/Client</a>
+</div>    
+<mat-card class="example-card">
+    <mat-card-title>Details</mat-card-title>
+    <mat-card-subtitle>...View..</mat-card-subtitle>
+    
+    <mat-card-content>
+        <!-- Contenido de la card-->
+
+        <ng-container matColumnDef="cc">
+            <mat-label><strong>CC: </strong>{{the_cc}}</mat-label>
+        </ng-container><br/><br/>
+
+        <ng-container matColumnDef="name">
+            <mat-label><strong>Name: </strong>{{the_name}}</mat-label>
+        </ng-container><br/><br/>
+
+        <ng-container matColumnDef="last_name">
+            <mat-label><strong>Last name: </strong>{{the_last_name}}</mat-label>
+        </ng-container><br/><br/>
+
+        <ng-container matColumnDef="email">
+            <mat-label><strong>Email: </strong>{{the_email}}</mat-label>
+        </ng-container><br/><br/>
+
+        <ng-container matColumnDef="cc">
+            <mat-label><strong>Cell phone: </strong>{{the_cell_phone}}</mat-label>
+        </ng-container><br/><br/>
+        
+        <ng-container matColumnDef="birthday">
+            <mat-label><strong>Birthday: </strong>{{the_birthday}}</mat-label>
+        </ng-container><br/><br/>
+
+        <ng-container matColumnDef="address">
+            <mat-label><strong>Address: </strong>{{the_address}}</mat-label>
+        </ng-container><br/><br/>
+
+        <hr/>
+
+        <ng-container matColumnDef="tipy_contract">
+            <mat-label><strong>Type contract: </strong>{{the_tipy_contract}}</mat-label>
+        </ng-container><br/><br/>
+
+        <ng-container matColumnDef="origen">
+            <mat-label><strong>Origin: </strong>{{the_origen}}</mat-label>
+        </ng-container>
+      
+        <!--Final del contenido de la card-->
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <a mat-button color="success" [mat-dialog-close]="true" routerLink="/clients">Close</a>
+    </mat-card-actions>
+  </mat-card>
