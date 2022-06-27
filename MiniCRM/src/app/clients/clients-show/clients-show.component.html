@@ -3,7 +3,14 @@
       <a mat-raised-button class="demo-button" routerLink="/addUser" (click)="addUsers()" color="primary">
       Add New
       </a>
-  </div></td>
+  
+    <mat-form-field appearance="standard" style="padding: 1%;">
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="FilterData($event)" placeholder="Search..." #input>
+    </mat-form-field>
+  </div>
+  </td>
+  
   </tr>
 </table>
 

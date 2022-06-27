@@ -82,4 +82,10 @@ export class ClientsShowComponent implements OnInit {
     })
   }
 
+  //Función para buscar/filtrar
+  FilterData(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+}
+
 }
