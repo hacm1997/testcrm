@@ -13,9 +13,8 @@ class Usuarios(models.Model):
     last_name = models.CharField(max_length=255, null=True, blank=True)
     email = models.CharField(max_length=255, null=True, blank=True)
     cell_phone = models.CharField(max_length=255, null=True, blank=True)
-    birthday = models.DateTimeField(null=True, blank=True)
     address = models.TextField(null=True, blank=True)
-    type = models.ForeignKey(Type, on_delete=models.CASCADE, null=True, blank=True)
+    #type = models.ForeignKey(Type, on_delete=models.CASCADE, null=True, blank=True)
 
     class Meta:
         abstract = True

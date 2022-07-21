@@ -33,7 +33,6 @@ export class ClientsAddComponent implements OnInit {
       email : ['', Validators.required],
       cell_phone : ['', Validators.required],
       address : ['', Validators.required],
-      birthday : ['', Validators.required],
       tipy_contract : ['', Validators.required],
       origen : ['', Validators.required]   
 

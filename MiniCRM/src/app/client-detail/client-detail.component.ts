@@ -20,7 +20,6 @@ export class ClientDetailComponent implements OnInit {
   the_last_name = "";
   the_email = "";
   the_cell_phone = "";
-  the_birthday = "";
   the_address = "";
   the_tipy_contract = "";
   the_origen = "";
@@ -36,7 +35,6 @@ export class ClientDetailComponent implements OnInit {
       this.the_last_name = this.viewUser.last_name;
       this.the_email = this.viewUser.email;
       this.the_cell_phone = this.viewUser.cell_phone;
-      this.the_birthday = this.viewUser.birthday;
       this.the_address = this.viewUser.address;
       this.the_tipy_contract = this.viewUser.tipy_contract;
       this.the_origen = this.viewUser.origen;

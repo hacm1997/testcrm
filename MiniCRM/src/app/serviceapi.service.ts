@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ServiceapiService {
 
   //Ruta de la API creada en django
-  readonly EndPoint = "http://localhost:8080/";
+  readonly EndPoint = "http://localhost:8080/RestFullCrm/";
 
   constructor(private http:HttpClient) {}
     
@@ -20,7 +20,7 @@ export class ServiceapiService {
 
     //Método para agregar un tipo de usuario/cliente
     addType(val:any){
-      return this.http.post(this.EndPoint + 'restapi/add/', val);
+      return this.http.post(this.EndPoint + 'ApiRest/User/add/', val);
     }
 
     //Método para actualizar un tipo de usuario/cliente

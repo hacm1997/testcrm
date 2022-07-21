@@ -25,7 +25,6 @@ export class ModalComponent implements OnInit {
         email : ['', Validators.required],
         cell_phone : ['', Validators.required],
         address : ['', Validators.required],
-        birthday : ['', Validators.required],
         tipy_contract : ['', Validators.required],
         origen : ['', Validators.required],
       });
@@ -37,7 +36,6 @@ export class ModalComponent implements OnInit {
         this.clientForm.controls['email'].setValue(this.editUser.email)
         this.clientForm.controls['cell_phone'].setValue(this.editUser.cell_phone)
         this.clientForm.controls['address'].setValue(this.editUser.address)
-        this.clientForm.controls['birthday'].setValue(this.editUser.birthday)
         this.clientForm.controls['tipy_contract'].setValue(this.editUser.tipy_contract)
         this.clientForm.controls['origen'].setValue(this.editUser.origen)
       }

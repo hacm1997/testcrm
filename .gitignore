@@ -176,3 +176,15 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/django
+/BackJavaFull/apirestcrm/nbproject/private/
+/BackJavaFull/Minicrmapi/nbproject/private/
+/BackJavaFull/RestApiCrm/nbproject/private/
+/BackJavaFull/CrmRestApi/nbproject/private/
+/BackJavaFull/crmapirest/nbproject/private/
+/BackJavaFull/CrmApi/nbproject/private/
+/BackJavaFull/CrmApiRest/nbproject/private/
+/BackJavaFull/WebCrmApi/nbproject/private/
+/BackJavaFull/RestCrmApi/nbproject/private/
+/BackJavaFull/TestGlassfish/nbproject/private/
+/BackJavaFull/Glassfish/nbproject/private/
+/BackJavaFull/WebApplication1/nbproject/private/
